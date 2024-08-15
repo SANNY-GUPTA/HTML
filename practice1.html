@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="display">this is display</h1>
+    <button onclick="himsg()">HI</button>
+    <button id="hel">HEllo</button>
+    <button id="bye"> bye</button>
+<script>
+    let ds=document.getElementById('display')
+    function himsg(){
+        ds.textContent='sanny'
+        ds.style.color='blue'
+    }    
+    let eventpro=document.getElementById('hel')
+        eventpro.onclick=function(){
+            ds.textContent='welcome'
+            ds.style.color='yellow'
+        }
+    let addlistener=document.getElementById('bye')
+        addlistener.addEventListener('click',function()
+    {
+        ds.textContent='bye-bye'
+        ds.style.color='red'
+    })
+    let user=[1,2,3,4,5]
+    a=user.length
+    console.log(a)
+    user.length=4
+    console.log(user)
+    user.length=5
+    console.log(user)
+    user.length=15
+    console.log(user)
+    let a1=[10,20,30]
+    let b=a1
+    b[2]=40
+    console.log(a1)
+    console.log(b)
+</script>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(image/1.jpg);
+            /* background-attachment: fixed; */
+            background-size: cover;
+        }
+        #large{
+            width: 500px;
+            height: 500px;
+            display: inline-block;
+            background-color:#ffffff;
+            border-radius: 0px;
+            position: relative;
+            margin-left: 500px;
+            top: 100px;
+            opacity: .6;
+            border: 2px solid black;
+        }
+        #small{
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            left: 700px;
+            top: 60px;
+            background-color: whitesmoke;
+            position: absolute;
+            border-radius: 200px;
+
+        }
+        #form{
+            text-align: center;
+            margin-top: 50px;
+            font-weight: bold;
+            padding: 20px;
+            color: #000000;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 id="large">this is sanny
+        <form id="form">
+            <label>enter username</label>
+            <input type="text" placeholder="your name..">
+            <br>
+            <label>enter password</label>
+            <input type="password" border="None" outline="None" placeholder="your password ...">
+            <br>
+            <br>
+            <label>user feedback</label>
+            <textarea name="" id=""></textarea>
+            <br>
+            <input type="submit">
+            <input type="reset">
+
+            <br>
+        </form>
+        <h1 id="small">
+            this is normal
+        </h1>
+    </h1>
+</body>
+</html>

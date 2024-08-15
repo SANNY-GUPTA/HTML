@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>setInterval</h1>
+    <script>
+        let count = 0
+        // setInterval(function () {
+        //     count++;
+        //     console.log(count)
+        // }, 1000)
+        let timer = setInterval(() => {
+            count++
+            console.log(count)
+        }, 2000)
+        setTimeout(() => {
+            clearInterval(timer) // matlab interval me chalana hai but timeout lagane ke bad utana setTimeout tak hi chalega
+        },6000)
+    </script>
+</body>
+
+</html>

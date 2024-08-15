@@ -1,0 +1,66 @@
+css positions- 
+.by using css position property we can change the place of the html element
+.the position propety has five different values
+    a) static
+    b) relative
+    c) absolute
+    d) fixed
+    e) sticky 
+
+postion:static 
+by using static position we can not change the place of an html element
+ selector
+ {
+    position:static;
+    top:20px;
+    left:200px;
+ } 
+ the default position of all html is static element 
+  if we not write position:static so it take default
+
+
+position:relative
+by using relative  position we can change the placeof an html element from starting point.(relative point)
+  selector
+  {
+    position:relative;
+    top:10px;
+    left:200px;
+  }
+
+
+position:fixed
+by using fixed position we can change the place of an html element, but fixed element cannot be scrolled with
+the cantent
+
+ selector
+ {
+    position:fixed;
+    top:300px;
+    left:200px;
+ }
+
+
+
+
+
+position:sticky
+by using sticky position we can scroll an html element along with the cantent , but it will get  stick for given values
+
+selector{
+    position:sticky;
+    top:20px;
+}
+
+
+
+
+position:absolute
+absolute element will be depend on it's first relative parent element
+if there is no parent relative element then its depend on body tag
+
+
+
+
+
+table;------

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> web Browser</h1>
+    <script>
+        let usn='gupta' 
+        let a='sanny'
+        localStorage.setItem(usn,a); // local_memeory me show karega
+        let b=localStorage.getItem(usn)
+        console.log(b)
+        localStorage.removeItem('usn') // 
+        localStorage.clear()   // clear method use karne se local_memory se data delete ho jata hai but console se nahi(matlab cache data rahega)
+
+    </script>
+</body>
+</html>

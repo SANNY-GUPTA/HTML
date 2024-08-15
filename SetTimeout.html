@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>sanny</h1>
+    <script>
+        console.log('please start')
+        setTimeout(function () {
+            console.log('generated')
+        }, 3000)
+        console.log('creating ....')
+
+
+        console.log('2nd are starting')
+        setTimeout(function (name, degree) {
+            console.log(`hey ${name},your${degree} are generated please wait some 2nd time`)
+        }, 3000, 'sanny', 'B.tech')
+        console.log('creating ........')
+
+        console.log('3rd are ')
+        let s=['sanny','B.Tech']
+        let timer=setTimeout(function(name,degree)
+        {
+        console.log(`hey ${name},your${degree} are generated please wait some 3rd time`)
+        },3000,...s)
+        console.log('creating ....')
+        clearTimeout(timer) // matlab clearTimeout jis par use karenge o print nahi hoga
+    </script>
+</body>
+
+</html>

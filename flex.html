@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-css </title>
+    <style>
+        .container{
+            display: flex;
+            border: 2px solid black;
+            height: 500px;
+            gap: 0px 20px;
+            flex-direction: row;
+            /* flex-direction: column; */
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column-reverse; */
+            /* justify-content: start; */
+            /* justify-content: end;  */
+            /* justify-content: center; */
+            /* justify-content: space-around; */
+            /* justify-content: space-between; */
+            /* justify-content: space-evenly; */
+            /* align-items: center; */
+            /* align-items: start; */
+            /* align-items: end; */
+            flex-wrap: wrap;
+            flex-wrap: column wrap;
+            flex-wrap: wrap-reverse;
+        }
+        .item{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            border: 2px solid black;
+        }
+        
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="item 1">1</div>
+        <div class="item 2" >2</div>
+        <div class="item 3">3</div>
+        <div class="item 4">4</div>
+        <div class="item 5">5</div>
+        <div class="item 6">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item">10</div>
+    </div>
+</body>
+</html>

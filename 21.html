@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<htmohhl lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../HTML/fontawesome-free-6.5.2-web/css/all.css">
+    <style>
+        .input-group-text
+        {
+            height: 40px !important;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <a href="#" class="navbar-brand">Amazon</a>
+    </nav>
+    <section class="container mt-5">
+        <div class="row">
+            <div class="col-md-6 m-auto">
+                <div class="card">
+                    <div class="card-header bg-dark text-white">
+                        <h2 class="text-center">Password Box</h2>
+                    </div>
+                    <div class="card-body">
+
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">
+                                <input type="checkbox" id="check-box">
+                              </div>
+                            </div>
+                            <input type="password" class="form-control" placeholder="Enter Password" id="pw-box">
+                          </div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+<!-- Script Code -->
+<script>
+    let pwBox=document.getElementById('pw-box');
+    let checkBox=document.getElementById('check-box');
+
+    checkBox.addEventListener('change',function()
+    {
+        let attValue=pwBox.getAttribute('type');//password
+        
+        if(attValue=='password')
+        {
+            pwBox.setAttribute('type','text');
+        }
+        else
+            pwBox.setAttribute('type','password');
+        }
+    )
+</script>
+</body>
+</html>

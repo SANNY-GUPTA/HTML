@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+        }
+        body>div{
+            text-align: center;
+            background-color: yellow;
+            padding: 80px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 id="display"></h1>
+        <button onclick="printMsg1()">print Message-1</button>
+        <button onclick="printMsg2()"> print Message-2</button>
+        <button onclick="printMsg3()">print Message-2</button>
+    </div>
+    <!-- scripts code -->
+    <script>
+        function printMsg1()
+        {
+            let displayTag=document.querySelector("#display");
+            display.textContent='this is DOM class'
+            displayTag.style.color="black"
+        }
+        function printMsg2()
+        {
+            let displayTag=document.querySelector("#display");
+            display.textContent='this is DOM class and first-1'
+            displayTag.style.color="green"
+        }
+        function printMsg3()
+        {
+            let displayTag=document.querySelector("#display");
+            display.textContent='this is DOM class and seconmd-2'
+            displayTag.style.color="blue"
+        }
+    </script>
+</body>
+</html>

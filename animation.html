@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            border-radius: 10px;
+            border: 2px solid black;
+            /* animation: key 3s linear 0s 4 forwards; */
+            animation-name: key;
+            animation-duration: 3s;
+            animation-timing-function: linear;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+
+        }
+        *{
+            background-color: rgb(203, 157, 157);
+        }
+        @keyframes key {
+            0%,100%{
+                top: 0px;
+                left: 0px;
+                position: relative;
+            }
+            25%{
+                top: 0px;
+                left: 200px;
+                position: relative;
+                border-radius: 50%;
+                background-color: blue;
+
+            }
+            50%{
+                top: 200px;
+                left: 200px;
+                position: relative;
+                background-color: yellow;
+                border-radius: 20%;
+
+
+            }
+            75%{
+                left: 0px;
+                top: 200px;
+                position: relative;
+                background-color: rgb(3, 33, 26);
+                border-radius: 75%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+
+    </div>
+</body>
+</html>

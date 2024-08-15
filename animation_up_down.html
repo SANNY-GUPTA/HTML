@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loading_page_animation</title>
+    <style>
+        .child{
+            width: 50px;
+            height: 50px;
+            display: inline-block;
+            border-radius: 50%;
+            margin-right: 50px;
+            animation-name: key;
+            animation-duration: 3s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            
+        }
+        *{
+            background-color: black;
+        }
+        .container{
+            text-align: center;
+            margin-top: 200px;
+        }
+        .one{
+            background-color: rgb(25, 183, 14);
+            animation-delay: 1s;
+            animation-duration: 1s;
+        }
+        .two{
+            background-color: rgb(15, 15, 81);
+            animation-delay: 2s;
+            animation-duration: 2s;
+        }
+        .three{
+            background-color: rgb(187, 225, 179);
+            animation-delay: .2s;
+            animation-duration: 3s;
+        }
+        .four{
+            background-color: rgb(231, 20, 34);
+            animation-delay: 1.5s;
+            animation-duration: 2s;
+        }
+        .five{
+            background-color: rgb(52, 170, 196);
+            animation-delay: 3s;
+            animation-duration: 2s;
+        }
+        .six{
+            background-color: rgb(84, 84, 150);
+            animation-delay: 1s;
+            animation-duration: 1s;
+        }
+        @keyframes key {
+            0%{
+                transform: translateY(-200px)
+            }
+            100%{
+                transform:translateY(200px)
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="child one"></div>
+        <div class="child two"></div>
+        <div class="child three"></div>
+        <div class="child four"></div>
+        <div class="child five"></div>
+        <div class="child six"></div>
+    </div>
+</body>
+</html>
